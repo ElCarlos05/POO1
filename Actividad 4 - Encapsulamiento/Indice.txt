@@ -1,0 +1,38 @@
+ÍNDICE DEL PROGRAMA: CLASE CUENTA DE BANCO
+
+1. Definición de la clase CuentaDeBanco
+   - Representa una cuenta bancaria con datos privados (NIP y saldo).
+
+   1.1. Método __init__(self, nombre, nip, saldo)
+        - Constructor que recibe:
+          • nombre: Nombre del titular (accesible públicamente).
+          • nip: Número de identificación personal (privado).
+          • saldo: Monto inicial (privado).
+        - Se guardan los datos en atributos, usando __ (doble guión bajo) para ocultar los sensibles.
+
+   1.2. Método mostrarSaldo(self)
+        - Retorna el saldo disponible de la cuenta.
+        - Protege el acceso al atributo privado __saldo.
+
+2. Creación de un objeto
+   - Se crea una cuenta con:
+     • Nombre: Jaime perez
+     • NIP: 1234
+     • Saldo: 500
+
+   Código:
+     tarjeta = CuentaDeBanco("Jaime perez", 1234, 500)
+
+3. Uso del objeto
+   - Se imprimen datos de la cuenta:
+     • Nombre del titular:
+         print(tarjeta.nombre)
+     • Saldo disponible:
+         print(tarjeta.mostrarSaldo())
+
+4. Notas adicionales
+   - Encapsulamiento: __nip y __saldo están protegidos.
+   - Se accede al saldo de forma segura usando un método.
+   - Puede mejorarse añadiendo:
+     • Verificación del NIP antes de mostrar el saldo.
+     • Métodos para depositar, retirar o cambiar NIP.

@@ -1,0 +1,39 @@
+ÍNDICE DEL PROGRAMA: CONVERSIÓN ENTRE ESTRUCTURAS DE DATOS EN PYTHON
+
+1. Importación de librerías
+   - import numpy
+     • Se importa la librería, aunque en este código no se utiliza activamente.
+     • Línea comentada: creación de un array de NumPy (puede usarse en versiones futuras).
+
+2. Definición de estructuras
+   2.1. Lista: lista1
+        - Contiene valores de distintos tipos:
+          ["hola", True, 1, "Json", 3]
+
+   2.2. Tupla: tupla1
+        - Se crea a partir de la lista1 usando la función tuple().
+        - Inmutable (no se puede modificar).
+
+   2.3. Conjunto: conjunto1
+        - Se crea con set(lista1).
+        - Elimina elementos duplicados automáticamente.
+        - No mantiene el orden.
+        - Advertencia: no acepta elementos no hashables (como listas o diccionarios), pero aquí no hay problema.
+
+   2.4. Diccionario: diccionario1
+        - Almacena pares clave:valor.
+        - Datos simulados de una persona:
+          • Nombre, Edad, Estado civil, Ocupación y Años laborando.
+
+3. Salida en consola (print)
+   - Se imprimen todas las estructuras:
+     • print(lista1)
+     • print(tupla1)
+     • print(conjunto1)
+     • print(diccionario1)
+
+4. Notas adicionales
+   - El conjunto puede mostrar los elementos en orden diferente al de la lista original.
+   - La tupla conserva el orden y tipo de datos de la lista.
+   - El diccionario muestra información ordenada por claves.
+   - La librería NumPy no se usa directamente en este fragmento.
