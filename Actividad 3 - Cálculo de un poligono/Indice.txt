@@ -1,0 +1,20 @@
+Código: Cálculo Generalizado para Cualquier Polígono Regular
+1. **Importación**
+
+   * `from math import radians, tan`: Importa solo funciones necesarias.
+
+2. **Clase `Figura`**
+
+   * Método `area(nLados, vLado)`:
+
+     * Generaliza el cálculo del área para cualquier polígono regular con `n ≥ 3`.
+     * Utiliza fórmula con apotema y tangente del ángulo central.
+     * No hay entrada del usuario, sino llamadas directas con parámetros.
+   * Método `perimetro(nLados, vLado)`:
+
+     * Multiplica número de lados por la longitud del lado para obtener el perímetro.
+
+3. **Llamadas a los métodos**
+
+   * `unaFigura.area(2, 6)`: intenta calcular área con 2 lados (no válido).
+   * `unaFigura.perimetro(8, 7)`: calcula perímetro de un octágono regular.
