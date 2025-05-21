@@ -1,0 +1,47 @@
+ÍNDICE DEL PROGRAMA: MANEJO DE CONJUNTOS EN PYTHON
+
+1. Introducción a conjuntos
+   - Operaciones básicas:
+     • c.add(valor): Añade un elemento al conjunto.
+     • c.remove(valor): Elimina un elemento; si no existe, genera error.
+     • c.discard(valor): Elimina un elemento; si no existe, no genera error.
+     • n in c: Verifica si un elemento pertenece al conjunto.
+
+2. Ejercicio práctico con conjunto b
+   - Creación: b = {0,1,2,3,4}
+   - Agregar valor: b.add(5)
+   - Eliminar valor existente: b.remove(0)
+   - Eliminar valor inexistente (sin error): b.discard(6)
+   - Verificar existencia de valor: 1 in b
+   - Agregar valor repetido: b.add(2) (no afecta conjunto)
+
+3. Operaciones entre conjuntos
+   - Unión:
+     • u = b.union(a)
+     • u = a | b
+   - Intersección:
+     • i = a.intersection(b)
+     • i = a & b
+   - Diferencia:
+     • d = a.difference(b)
+     • d = a - b
+   - Diferencia simétrica:
+     • sd = a.symmetric_difference(b)
+     • sd = a ^ b
+
+4. Comprobaciones de pertenencia
+   - a.issubset(b): Verifica si a está contenido en b.
+   - b.issuperset(a): Verifica si b contiene a.
+
+5. Otros métodos
+   - len(a): Número de elementos en el conjunto a.
+   - a.clear(): Vacía el conjunto a.
+   - b.copy(): Copia el conjunto b a una nueva variable.
+
+6. Salidas y ejemplos impresos
+   - Cada operación incluye impresión en consola para mostrar resultados.
+
+7. Observaciones
+   - Los conjuntos no permiten elementos duplicados.
+   - Operaciones como unión, intersección y diferencia se pueden hacer con métodos o con operadores.
+   - Discernir entre remove y discard es importante para evitar errores.

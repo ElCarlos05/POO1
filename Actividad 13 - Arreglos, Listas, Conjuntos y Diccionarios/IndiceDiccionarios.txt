@@ -1,0 +1,37 @@
+ÍNDICE DEL PROGRAMA: MANIPULACIÓN DE DICCIONARIOS EN PYTHON
+
+1. Creación de diccionarios
+   - dic = {'x': "equis", 'y': "ye", 'd': "de"}
+   - dic2 = dict(x="equis", y="ye", d="de")
+
+2. Acceso a valores
+   - dic['x']: Acceso directo (genera error si no existe la clave)
+   - dic.get('x'): Acceso seguro (retorna None si no existe)
+   - dic.get('z'): Retorna None porque no existe
+
+3. Modificación y agregado
+   - Modificar valor existente: dic['x'] = "equis"
+   - Agregar nuevo elemento: dic['z'] = "zeta"
+
+4. Eliminación de elementos
+   - del dic['y']: Elimina la clave 'y'
+   - x = dic.pop('y'): Elimina y retorna el valor eliminado
+
+5. Verificaciones
+   - 'x' in dic: Comprueba si la clave existe (retorna True/False)
+
+6. Acceso a llaves, valores y pares
+   - dic.keys(): Devuelve las llaves del diccionario
+   - dic.values(): Devuelve los valores
+   - dic.items(): Devuelve tuplas (clave, valor)
+
+7. Vaciar diccionario
+   - dic2.clear(): Vacía todos los elementos de dic2
+
+8. Actualización múltiple
+   - dic.update({'x': "yahooo", 'y': "springtrap", 'd': "foxy"}): Modifica/agrega múltiples elementos
+
+9. Observaciones
+   - Uso de get para evitar errores por claves inexistentes.
+   - El método pop permite recuperar el valor eliminado.
+   - Diccionarios son mutables y pueden actualizarse dinámicamente.

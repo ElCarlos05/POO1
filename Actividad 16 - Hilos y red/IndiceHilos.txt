@@ -1,0 +1,26 @@
+ÍNDICE DEL PROGRAMA: USO DE HILOS (THREADING) EN PYTHON
+
+1. Importaciones
+   - threading: para manejar hilos
+   - time: para pausas temporales
+
+2. Clase hilo (hereda de threading.Thread)
+   - __init__(self, nombre, intervalo):
+       • Inicializa el hilo con nombre y tiempo de espera entre iteraciones
+   - run(self):
+       • Método principal del hilo que se ejecuta al llamar start()
+       • Imprime inicio del hilo
+       • Ejecuta 5 iteraciones con print e intervalo de espera (time.sleep)
+       • Imprime fin del hilo
+
+3. Creación y ejecución de hilos
+   - hilo1 = hilo("hilo1", 2): crea hilo con intervalo 2 segundos
+   - hilo2 = hilo("hilo2", 4): crea hilo con intervalo 4 segundos
+   - hilo1.start(): inicia ejecución de hilo1
+   - hilo2.start(): inicia ejecución de hilo2
+   - hilo1.join(): espera a que hilo1 termine antes de continuar
+   - hilo2.join(): espera a que hilo2 termine
+
+4. Observaciones
+   - Uso básico de hilos para tareas concurrentes
+   - Control de tiempos con sleep para simular trabajo o pausas

@@ -1,0 +1,39 @@
+ÍNDICE DEL PROGRAMA: ENUMERACIÓN DE DÍAS Y VALIDACIÓN DE ENTRADAS
+
+1. Importación
+   - from enum import Enum
+     • Importa la clase base para crear enumeraciones.
+
+2. Definición de la enumeración Dias
+   - Miembros con valores de tipo string que representan los días de la semana:
+     • LUNES = "Lunes"
+     • MARTES = "Martes"
+     • MIERCOLES = "Miércoles"
+     • JUEVES = "Jueves"
+     • VIERNES = "Viernes"
+     • SABADO = "Sábado"
+     • DOMINGO = "Domingo"
+
+3. Definición de la función verificar_dia(dia)
+   - Validaciones:
+     • Verifica que el argumento sea de tipo string; si no, lanza TypeError.
+     • Normaliza el texto con capitalize() para comparaciones.
+     • Comprueba si el día está dentro de los valores definidos en Dias.
+     • Si es válido, imprime "Día válido: {dia}".
+     • Si no, lanza ValueError con mensaje específico.
+   - Manejo de excepciones:
+     • Captura TypeError y ValueError para mostrar mensajes de error adecuados.
+   - Finalmente:
+     • Imprime "Ejecución finalizada." siempre al final.
+
+4. Uso y pruebas
+   - Llamadas a verificar_dia con distintos argumentos:
+     • "Martes" → válido
+     • "Arlecchino padre" → inválido
+     • "Faia" → inválido
+     • 123 → error de tipo
+
+5. Observaciones
+   - Uso práctico de Enum para restringir valores válidos.
+   - Buen manejo de errores con try-except-finally.
+   - La función permite validar entradas y controlar errores fácilmente.

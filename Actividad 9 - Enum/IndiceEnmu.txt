@@ -1,0 +1,31 @@
+ÍNDICE DEL PROGRAMA: USO DE ENUMERACIONES EN PYTHON
+
+1. Importación
+   - from enum import Enum
+     • Importa la clase base para crear enumeraciones.
+
+2. Definición de la enumeración Season
+   - Valores definidos:
+     • SPRING = 1
+     • SUMMER = 2
+     • AUTUMN = 3
+     • WINTER = 4
+
+3. Uso de la enumeración
+   - Imprime el miembro SPRING completo:
+     • print(Season.SPRING)
+   - Imprime el nombre del miembro:
+     • print(Season.SPRING.name)
+   - Imprime el valor asociado al miembro:
+     • print(Season.SPRING.value)
+   - Imprime el tipo del miembro:
+     • print(type(Season.SPRING))
+   - Imprime la representación oficial del miembro:
+     • print(repr(Season.SPRING))
+   - Imprime la lista de todos los miembros de Season:
+     • print(list(Season))
+
+4. Observaciones
+   - Enum es útil para definir conjuntos de constantes con nombre.
+   - Cada miembro tiene un nombre y un valor.
+   - Permite comparaciones y acceso seguro a valores predefinidos.

@@ -1,0 +1,31 @@
+ÍNDICE DEL PROGRAMA: HERENCIA Y POLIMORFISMO EN ANIMALES
+
+1. Definición de la clase base: Animal
+   - Atributo:
+     • nombre: Nombre del animal.
+   - Método:
+     • hacerSonido(self): Método vacío (pass), que se implementa en subclases.
+
+2. Definición de subclases que heredan de Animal
+   2.1 Perro
+       - Implementa hacerSonido() retornando "guau".
+   2.2 Gato
+       - Implementa hacerSonido() retornando "miau".
+   2.3 Vaquita
+       - Implementa hacerSonido() retornando "Muuu".
+
+3. Creación de objetos
+   - unAnimal = Perro("Abdiel negrooooo")
+   - otroAnimal = Gato("Brianstorm")
+   - elAnimal = Vaquita("Varesa")
+
+4. Uso de métodos y salida
+   - Se imprime el nombre y el sonido que hace cada animal:
+     • print(unAnimal.nombre, " hace ", unAnimal.hacerSonido())
+     • print(otroAnimal.nombre, " hace ", otroAnimal.hacerSonido())
+     • print(elAnimal.nombre, " hace ", elAnimal.hacerSonido())
+
+5. Observaciones
+   - Uso de herencia para reutilizar código.
+   - Polimorfismo aplicado: cada subclase implementa su propio comportamiento para hacerSonido().
+   - Código fácil de ampliar añadiendo nuevos animales.
